@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import LoadingPage from './Components/LoadingPage'; // Import LoadingPage component
+import LoadingPage from './Components/LoadingPage'; 
 import Header from './Components/Header';
 import Home from './Components/Home';
 import About from './Components/About';
