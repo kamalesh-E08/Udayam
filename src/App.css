@@ -547,25 +547,46 @@ CONTACT DETAILS */
   margin-top: 2rem;
 }
 
-.social-links h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 8px magenta;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.social-links a {
-  display: inline-block;
-  color: #00FFFF;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 1rem;
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.2rem;
-  transition: color 0.3s, transform 0.2s;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.social-links a:hover {
-  color: #FFD700;
+.social-link .icon {
+  font-size: 1.5rem;
+}
+
+.instagram {
+  background: #E1306C;
+  box-shadow: 0 0 10px #E1306C;
+}
+
+.linkedin {
+  background: #0077B5;
+  box-shadow: 0 0 10px #0077B5;
+}
+
+.whatsapp {
+  background: #25D366;
+  box-shadow: 0 0 10px #25D366;
+}
+
+.social-link:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
 /* Footer */
