@@ -1,169 +1,212 @@
-body {
-  font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #6f008b, #FF0000);
-  color: white;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 header {
-  background: linear-gradient(to right, #00008B, #FF0000);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #6f008b, #FF0000);
   color: white;
-  padding: 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
 }
 
-.logos {
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+.header.visible {
+  transform: translateY(0);
+}
+
+.navbar {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .logo {
-  height: 50px;
-  width: auto;
-}
-
-.poster {
-  width: 80%;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
+  height: 140px;
+  width: 140px;
   display: flex;
-  gap: 1rem;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.scroll-content {
-  max-height: 100px;
-  overflow-y: auto;
-  padding-right: 10px;
-  box-sizing: border-box;
-}
-
-.scroll-content::-webkit-scrollbar {
-  width: 8px;
-}
-
-.scroll-content::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.scroll-content::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-.scroll-content::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-
-main {
-  padding: 1rem;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.card {
-  background: linear-gradient(to bottom, #6f008b, #00008B);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  text-align: center;
-  width: 250px;
-  transition: transform 0.3s;
-  color: white;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.event-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-footer {
-  background: linear-gradient(to right, #6f008b, #00008B);
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}.events-container {
-  position: relative;
-}
-.logo-1div{
-  box-sizing: border-box;
-  height:10px;
-  width: 10px;
-  
-}
 .logo1 {
-
-
-  max-width: calc(50% - 20px); /* Makes sure it does not exceed the parent container minus padding */
-  width: calc(5vw + 50px); /* Dynamically resizes based on screen width */
-  height: auto;
-/* padding: 0px 2vw 0px 2vw; */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
   object-fit: contain;
 }
 
-.nav-links {
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
+.mobile {
+  display: none;
 }
-.nav_child{
-  margin: 0;
-}
-.Heading{
-font-size: calc(32px + 8 * ((90vw - 568px) / (768 - 568)));
-}
-.navbar{
-  display: flex;
-  width: 100%;
 
-  justify-content: space-between;
-}
-.title-container{
+.mobile-logo {
+  height: 50px;
+  width: 80px;
   display: flex;
- flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.title-container {
+  text-align: center;
+  flex: 1;
+}
+
+.Heading {
+  font-family:'Playfair Display', serif;
+  color: #080108;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  z-index: 1100;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* NAV MENU */
+.nav-links {
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+  height: 35%;
+  align-items: center;
+  transition: right 0.3s ease-in-out;
+  z-index: 1099; 
+  padding: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+.nav-links.open {
+  right: 8%;
+}
+
+.nav-links a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* DIM BACKGROUND WHEN MENU IS OPEN */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 1098;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+
+  .Heading {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: -10;
+    background: linear-gradient(to bottom, #33005c, #ff00bb);
+    padding: 1rem 0;
+    text-align: center;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .nav-links.open{
+    display: flex;
+    height: 200px;
+  }
+
+  .hamburger {
+    display: flex;
+    padding: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mobile {
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+  }
+  .scroll-content {
+    font-size: 1rem;
+  }
 }
