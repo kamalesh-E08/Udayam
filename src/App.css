@@ -246,6 +246,7 @@ header {
 
 /* Heading Styling */
 .home-heading {
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -276,10 +277,12 @@ header {
 }
 
 .about-heading {
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 0 10px cyan, 0 0 20px #00FFFF;
+  text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px #b300ff;
   margin-bottom: 1.5rem;
 }
 
@@ -288,6 +291,8 @@ header {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 /* ========================= */
@@ -346,10 +351,11 @@ header {
 
 /* Event Heading with Glow Effect */
 .events-heading {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 0 10px #00FFFF, 0 0 20px #1E90FF;
+  text-shadow: 0 0 10px #c11512, 0 0 20px #ff1e8b;
   margin-bottom: 1.5rem;
 }
 
@@ -361,6 +367,14 @@ header {
   justify-content: center;
 }
 
+.card h3{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.5rem 0;
+}
+.card p{
+  font-family:'Times New Roman', Times, serif;
+  padding: 0.5rem 0;
+}
 .card {
   background: linear-gradient(to bottom, #6f008b, #00008B);
   border-radius: 8px;
@@ -400,14 +414,15 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   transition: background 0.3s, transform 0.2s;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .register-btn:hover {
   background: aqua;
   transform: scale(1.05);
 }
-/* 
-CONTACT DETAILS */
+
+/*CONTACT DETAILS */
 #contact {
   text-align: center;
   padding: 3rem 0;
@@ -417,10 +432,11 @@ CONTACT DETAILS */
 
 /* Contact Heading with Glow Effect */
 .contact-heading {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 0 10px #FFD700, 0 0 20px #FF4500;
+  text-shadow: 0 0 10px #00a6ff, 0 0 20px #FF4500;
   margin-bottom: 1.5rem;
 }
 
@@ -446,7 +462,7 @@ CONTACT DETAILS */
 }
 
 /* Highlighting the headings inside the contact cards */
-.contact-card h3 {
+.contact-card h3{
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
