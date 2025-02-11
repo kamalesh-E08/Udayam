@@ -11,13 +11,13 @@ const Contact = () => {
           <h3>Staff Coordinator</h3>
           <p><strong>Name:</strong> Mr. P. Mathivannan</p>
           <p><strong>Phone:</strong> +91 98949 09566</p>
-          <p><strong>Email:</strong> johndoe@email.com</p>
+          <p><strong>Email:</strong> mathivanan@kitcbe.ac.in </p>
         </div>
         <div className="contact-card">
           <h3>Student Coordinator</h3>
           <p><strong>Name:</strong> V. GokulBharath</p>
           <p><strong>Phone:</strong> +91 99446 99989</p>
-          <p><strong>Email:</strong> gokulbharath@gmail.com</p>
+          <p><strong>Email:</strong> kit26.csbs14@gmail.com</p>
         </div>     
         <div className="contact-card">
           <h3>College Address</h3>

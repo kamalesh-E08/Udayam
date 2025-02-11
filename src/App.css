@@ -271,41 +271,109 @@ header {
 /* About Section Styling */
 #about {
   text-align: center;
-  padding: 3rem 0;
-  color: rgb(37, 6, 131);
-  background-color: #39024f;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #1E0032, #39024f);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  border-radius: 10px;
 }
 
+/* Heading */
 .about-heading {
+
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px #b300ff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px cyan, 0 0 30px #00FFFF;
   margin-bottom: 1.5rem;
+  animation: glowText 2s infinite alternate;
 }
 
-.about-text {
-  font-size: 1.2rem;
+@keyframes glowText {
+  from { text-shadow: 0 0 10px cyan, 0 0 20px #00FFFF; }
+  to { text-shadow: 0 0 20px cyan, 0 0 40px #00FFFF; }
+}
+
+/* Subtext */
+.about-subtext {
+  font-size: 1.4rem;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
   font-family:'Courier New', Courier, monospace;
   font-weight: bold;
+  color: #F4E9F3;
 }
 
-/* ========================= */
-/* Countdown Timer Styling */
-/* ========================= */
+/* Event Details */
+.event-details {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
 
+.event-details p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.event-details strong {
+  color: #FFD700;
+}
+
+/* List Styling */
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #FFD700;
+}
+
+.about-list li::before {
+  content: "☞";
+  color: cyan;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+/* Countdown Section */
+.countdown-section {
+  margin-top: 3rem;
+}
+
+.countdown-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px cyan;
+}
+
+/* Countdown Timer Styling */
 .countdown-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 2rem;
 }
 
 /* Countdown Box */
@@ -314,31 +382,32 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90px;
-  height: 90px;
-  border: 2px solid blue;
-  border-radius: 10px;
-  box-shadow: 0 0 12px, 0 0 18px #FF4500;
-  font-size: 1.5rem;
+  width: 100px;
+  height: 100px;
+  border: 2px solid cyan;
+  border-radius: 12px;
+  box-shadow: 0 0 5px cyan, 0 0 5px #00FFFF;
+  font-size: 2rem;
   font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   transition: transform 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Hover Effect */
 .countdown-box:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 10px cyan, 0 0 10px #00FFFF;
 }
 
 /* Countdown Label */
 .countdown-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
-  color:#FFD700;
+  color: #ffcc00;
   text-transform: uppercase;
   margin-top: 5px;
 }
-
 
 /* ========================= */
 /* Event Section Styling */

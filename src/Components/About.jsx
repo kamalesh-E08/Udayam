@@ -25,30 +25,48 @@ const About = () => {
   const { days, hours, minutes, seconds } = getTimeUnits(timeLeft);
 
   return (
-    <section id="about">
-      <h2 className="about-heading">About Udhayam</h2>
-      <p className="about-text">
-        Our cultural program aims to bring together students from diverse
-        backgrounds to celebrate creativity and talent.
-      </p>
+    <section id="about" className="about-section">
+      <div className="about-container">
+        <h2 className="about-heading">🎉 Welcome to Udhayam 2025! 🎊</h2>
+        <p className="about-subtext">
+          A grand intercollege cultural fest, bringing together talent, 
+          creativity, and excitement!  
+        </p>
 
-      {/* Countdown Timer */}
-      <div className="countdown-container">
-        <div className="countdown-box">
-          {days}
-          <span className="countdown-label">Days</span>
+        <div className="event-details">
+          <p><strong>📅 Event Date:</strong> March 1, 2025</p>
+          <p><strong>📍 Venue:</strong> KIT-CBE</p>
+          <p><strong>🎟️ Registration Fee:</strong> ₹200 per person</p>
+          <p><strong>🔹 Why Join?</strong></p>
+          <ul className="about-list">
+            <li>🔥 Showcase your skills in tech, arts, and business events</li>
+            <li>🏆 Exciting prizes [5 Lakh ] and recognition</li>
+            <li>🤝 Network with students from various colleges</li>
+            <li>🎭 Fun, entertainment, and unforgettable memories!</li>
+          </ul>
         </div>
-        <div className="countdown-box">
-          {hours}
-          <span className="countdown-label">Hours</span>
-        </div>
-        <div className="countdown-box">
-          {minutes}
-          <span className="countdown-label">Minutes</span>
-        </div>
-        <div className="countdown-box">
-          {seconds}
-          <span className="countdown-label">Seconds</span>
+
+        {/* Countdown Timer */}
+        <div className="countdown-section">
+          <h3 className="countdown-heading">⏳ Countdown to Udhayam:</h3>
+          <div className="countdown-container">
+            <div className="countdown-box">
+              <span className="countdown-number">{days}</span>
+              <span className="countdown-label">Days</span>
+            </div>
+            <div className="countdown-box">
+              <span className="countdown-number">{hours}</span>
+              <span className="countdown-label">Hours</span>
+            </div>
+            <div className="countdown-box">
+              <span className="countdown-number">{minutes}</span>
+              <span className="countdown-label">Minutes</span>
+            </div>
+            <div className="countdown-box">
+              <span className="countdown-number">{seconds}</span>
+              <span className="countdown-label">Seconds</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
