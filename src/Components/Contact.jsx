@@ -5,12 +5,8 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <h2 className="contact-heading">Contact Us</h2>
-<<<<<<< HEAD
       <p className="contact-intro">For any inquiries, feel free to contact us.</p>
       <br></br>
-=======
-
->>>>>>> 084c3778fb50d4fb4661ac81d2257aeb6e72f3c0
       {/* Contact Details */}
       <div className="contact-details">
         <div className="contact-card">
