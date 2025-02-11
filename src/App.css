@@ -20,7 +20,6 @@ body, p {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  color: white;
 }
 
 header {
@@ -595,10 +594,15 @@ header {
 
 /* Footer */
 footer {
-  background: #6f008b;
+  background: #efedf0;
   font-weight:bolder;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 1rem;
   text-align: center;
+}
+
+footer a {
+  color: rgb(255, 0, 195);
+  text-decoration: none;
 }
 
