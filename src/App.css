@@ -1,11 +1,13 @@
+/* General Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #6f008b, #FF0000);
-  color: white;
+  background:#33005c;
+    color: white;
 }
 
+/* Header Section */
 header {
   background: linear-gradient(to right, #00008B, #FF0000);
   color: white;
@@ -34,11 +36,7 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
+/* Navigation */
 nav ul {
   list-style: none;
   padding: 0;
@@ -59,111 +57,332 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.scroll-content {
-  max-height: 100px;
-  overflow-y: auto;
-  padding-right: 10px;
-  box-sizing: border-box;
-}
-
-.scroll-content::-webkit-scrollbar {
-  width: 8px;
-}
-
-.scroll-content::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.scroll-content::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-.scroll-content::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background-color: purple;
 }
 
 
-main {
-  padding: 1rem;
+/* ========================= */
+/* Home Section Styling */
+/* ========================= */
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 0;
+  color: white;
+  background: url('/Udayam/public/gifimage.gif') no-repeat center center/cover;
+  background-size: cover;  
 }
 
+/* Container for Home Section */
+.home-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* Heading Styling */
+.home-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px cyan, 0 0 20px #00FFFF;
+  margin-bottom: 1.5rem;
+}
+
+/* Poster Image */
+.home-poster {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Poster Hover Effect */
+.home-poster:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+/* About Section Styling */
+
+
+#about {
+  text-align: center;
+  padding: 3rem 0;
+  color: white;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px cyan, 0 0 20px #00FFFF;
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* Countdown Timer Styling */
+/* ========================= */
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Countdown Box */
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 0 12px, 0 0 18px #FF4500;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.countdown-box:hover {
+  transform: scale(1.1);
+}
+
+/* Countdown Label */
+.countdown-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color:#FFD700;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+
+/* ========================= */
+/* Event Section Styling */
+/* ========================= */
+
+.events-section {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Event Heading with Glow Effect */
+.events-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #1E90FF;
+  margin-bottom: 1.5rem;
+}
+
+/* Event Cards */
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
   justify-content: center;
 }
 
 .card {
   background: linear-gradient(to bottom, #6f008b, #00008B);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
   text-align: center;
-  width: 250px;
-  transition: transform 0.3s;
+  width: 270px;
+  transition: transform 0.3s, box-shadow 0.3s;
   color: white;
 }
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
+/* Event Images */
 .event-image {
   width: 100%;
-  height: 150px;
+  height: 160px;
   object-fit: cover;
   border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
+/* Register Button */
+.register-btn {
+  display: inline-block;
+  background: #FFD700;
+  color: #000;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.register-btn:hover {
+  background: aqua;
+  transform: scale(1.05);
+}
+/* 
+CONTACT DETAILS */
+#contact {
+  text-align: center;
+  padding: 3rem 0;
+  color: white;
+}
+
+/* Contact Heading with Glow Effect */
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FF4500;
+  margin-bottom: 1.5rem;
+}
+
+/* Contact Details */
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  background: #00008B;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  padding: 1.8rem;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+  border: 2px solid black;
+}
+
+/* Highlighting the headings inside the contact cards */
+.contact-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px cyan, 0 0 12px #00FFFF;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Social Media Links */
+.social-links {
+  margin-top: 2rem;
+}
+
+.social-links h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px magenta;
+}
+
+.social-links a {
+  display: inline-block;
+  color: #00FFFF;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.social-links a:hover {
+  color: #FFD700;
+  transform: scale(1.1);
+}
+
+/* Footer */
 footer {
-  background: linear-gradient(to right, #6f008b, #00008B);
+  /* background: linear-gradient(to right, #6f008b, #00008B); */
+  background: #6f008b;
+  font-weight:bolder;
   color: white;
   padding: 1rem;
   text-align: center;
-}.events-container {
+}
+
+/* Logo & Navbar */
+.events-container {
   position: relative;
 }
-.logo-1div{
+
+.logo-1div {
   box-sizing: border-box;
-  height:10px;
+  height: 10px;
   width: 10px;
-  
 }
+
 .logo1 {
-
-
   max-width: calc(50% - 20px); /* Makes sure it does not exceed the parent container minus padding */
   width: calc(5vw + 50px); /* Dynamically resizes based on screen width */
   height: auto;
-/* padding: 0px 2vw 0px 2vw; */
   object-fit: contain;
 }
 
 .nav-links {
-  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
-.nav_child{
+
+.nav_child {
   margin: 0;
 }
-.Heading{
-font-size: calc(32px + 8 * ((90vw - 568px) / (768 - 568)));
+
+/* Responsive Heading */
+.Heading {
+  font-size: calc(32px + 8 * ((90vw - 568px) / (768 - 568)));
 }
-.navbar{
+
+.navbar {
   display: flex;
   width: 100%;
-
   justify-content: space-between;
 }
-.title-container{
+
+.title-container {
   display: flex;
- flex-direction: column;
-  
+  flex-direction: column;
 }

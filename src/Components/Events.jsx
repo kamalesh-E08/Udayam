@@ -1,9 +1,10 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import bixnxt from '../assets/bixnxt.png';
-import codeHunters from '../assets/code_hunters.png'
-import paperPresentation from '../assets/paper_presentaion.png'
-import gamez from '../assets/Gamez.png'
+import eventimage from '../assets/event.jpg';
+import codeHunters from '../assets/code_hunters.png';
+import paperPresentation from '../assets/paper_presentaion.png';
+import gamez from '../assets/Gamez.png';
 
 const events = [
   {
@@ -30,8 +31,12 @@ const events = [
 
 const Events = () => {
   return (
-    <section id="events">
-      <h2>Events</h2>
+    <section id="events" className="events-section"style={{ backgroundImage: `url(${eventimage})`,backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      {/* <img src={eventimage} alt="Events" className="events-image" /> */}
+      {/* Events Heading */}
+      <h2 className="events-heading">Events</h2>
+
+      {/* Event Cards */}
       <div className="cards">
         {events.map((event, index) => (
           <Fade key={index} cascade damping={0.1}>
@@ -42,6 +47,13 @@ const Events = () => {
             </div>
           </Fade>
         ))}
+      </div>
+
+      {/* Register Button (Placed Below Event Cards) */}
+      <div className="register-container">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo58Yusrng6zob_qROEm6N0rgGgVMSQ7ZOCKWDjfAn1cWa_w/viewform" target="_blank" rel="noopener noreferrer" className="register-btn">
+          Register Now
+        </a>
       </div>
     </section>
   );
