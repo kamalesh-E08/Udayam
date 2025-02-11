@@ -1,5 +1,4 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;500;700&display=swap');
 
 :root {
@@ -21,7 +20,6 @@ body, p {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  /* background:#33005c; */
   color: white;
 }
 
@@ -262,7 +260,6 @@ header {
 
 /* Heading Styling */
 .home-heading {
-  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -296,9 +293,6 @@ header {
 
 /* Heading */
 .about-heading {
-
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -322,7 +316,6 @@ header {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-  font-family:'Courier New', Courier, monospace;
   font-weight: bold;
   color: #F4E9F3;
 }
@@ -436,7 +429,6 @@ header {
 
 /* Event Heading with Glow Effect */
 .events-heading {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -452,14 +444,6 @@ header {
   justify-content: center;
 }
 
-.card h3{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0.5rem 0;
-}
-.card p{
-  font-family:'Times New Roman', Times, serif;
-  padding: 0.5rem 0;
-}
 .card {
   background: linear-gradient(to bottom, #6f008b, #00008B);
   border-radius: 8px;
@@ -517,7 +501,6 @@ header {
 
 /* Contact Heading with Glow Effect */
 .contact-heading {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -612,7 +595,6 @@ header {
 
 /* Footer */
 footer {
-  /* background: linear-gradient(to right, #6f008b, #00008B); */
   background: #6f008b;
   font-weight:bolder;
   color: white;
