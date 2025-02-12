@@ -30,7 +30,7 @@ const events = [
   {
     title: "BizNXT",
     description: "Present your innovative business ideas.",
-    fullDescription: "This event is designed to challenge participants' knowledge of the business world. It includes tasks such as identifying business terms, company names, logos, and notable business personalities. Additionally, participants will be required to create and present an advertisement for a product. This event is ideal for those interested in marketing, branding, and business strategy, and it is a solo participation event.",
+    fullDescription: "This event is designed to challenge participants' knowledge of the business world. It includes tasks such as identifying business terms, company names, logos, and notable business personalities. Additionally, participants will be required to create and present an advertisement for a product. This event is ideal for those interested in marketing, branding, and business strategy, and it is a team participation event(Max of 2 persons).",
     image: bixnxt,
     poster: biznxtposter,
     coordinators: ["Aswathi", "Devanya"]
