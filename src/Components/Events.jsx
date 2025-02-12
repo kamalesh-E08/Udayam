@@ -6,6 +6,9 @@ import codeHunters from '../assets/code_hunters.png';
 import paperPresentation from '../assets/paper_presentaion.png';
 import gamez from '../assets/Gamez.png';
 import gameposter from '../assets/gameposter.png';
+import ppposter from '../assets/ppposter.png';
+import codeposter from '../assets/codeposter.png';
+import biznxtposter from '../assets/biznxtposter.png';
 
 const events = [
   {
@@ -13,7 +16,7 @@ const events = [
     description: "Showcase your research and presentation skills.",
     fullDescription: "Paper Presentation is an event where you can showcase your research, technical knowledge, and presentation skills in front of an expert panel. Participants will be judged on innovation, content, and delivery.",
     image: paperPresentation,
-    poster: gameposter,
+    poster: ppposter,
     coordinators: ["Rubana", "Jane Smith"]
   },
   {
@@ -21,15 +24,15 @@ const events = [
     description: "Solve coding challenges and hunt for bugs.",
     fullDescription: "Code Hunter is a thrilling coding event where participants solve programming puzzles, debug code, and compete in algorithmic challenges. A must for coding enthusiasts!",
     image: codeHunters,
-    poster: gameposter,
-    coordinators: ["Kamesh", " "]
+    poster: codeposter,
+    coordinators: ["Kamesh", "Rajadurai"]
   },
   {
     title: "BizNXT",
     description: "Present your innovative business ideas.",
     fullDescription: "BizNXT challenges participants to present innovative business ideas. Teams will pitch their startups to judges, focusing on feasibility, creativity, and market impact.",
     image: bixnxt,
-    poster: gameposter,
+    poster: biznxtposter,
     coordinators: ["Vardanam Harshitha", "Robert Black"]
   },
   {

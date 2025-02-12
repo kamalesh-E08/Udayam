@@ -318,7 +318,9 @@ header {
   font-weight: bold;
   color: #F4E9F3;
 }
-
+.event-details li{
+  list-style: none;
+}
 
 /* Countdown Section */
 .countdown-section {
@@ -373,6 +375,13 @@ header {
   color: #ffcc00;
   text-transform: uppercase;
   margin-top: 5px;
+}
+.event-details {
+  border: 3px solid #FFD700;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  display: inline-block; 
 }
 
 /* ========================= */
@@ -554,7 +563,7 @@ header {
 
 .coordinator-list li {
   font-size: 1rem;
-  color: #00FFFF;
+  color: white;
   text-shadow: 0 0 10px #00FFFF, 0 0 20px #ff1e8b;
 }
 
