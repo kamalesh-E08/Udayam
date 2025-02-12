@@ -40,7 +40,7 @@ const About = () => {
           <p><strong>🔹 Why Join?</strong></p>
           <ul className="about-list">
             <li>🔥 Showcase your skills in tech, arts, and business events</li>
-            <li>🏆 Exciting prizes [5 Lakh ] and recognition</li>
+            <li>🏆 Win Exciting cash prizes </li>
             <li>🤝 Network with students from various colleges</li>
             <li>🎭 Fun, entertainment, and unforgettable memories!</li>
           </ul>
