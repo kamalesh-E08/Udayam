@@ -38,7 +38,7 @@ const events = [
   {
     title: "Gamez",
     description: "Participate in fun and engaging games.",
-    fullDescription: "GameZ is a fun-packed competition featuring eFootball and Stumble Guys. Compete against others in a fast-paced gaming experience!",
+    fullDescription: "GameZ is a fun-packed competition featuring eFootball(PES) and Stumble Guys. Compete against others in a fast-paced gaming experience!\n",
     image: gamez,
     poster: gameposter,
     coordinators: ["Kamalesh", "Mohammedsyfudee"]
