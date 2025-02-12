@@ -38,7 +38,7 @@ const events = [
   {
     title: "Gamez",
     description: "Participate in fun and engaging games.",
-    fullDescription: "An academic event where participants present research papers on various topics. The process involves paper submission, selection, and a presentation lasting 7-10 minutes per team. Teams can have up to three members, and the event emphasizes research, critical thinking, and effective communication skills. It's a great platform for those interested in academic research and public speaking.",
+    fullDescription: "GameZ is a fun-packed competition featuring eFootball and Stumble Guys. Compete against others in a fast-paced gaming experience!",
     image: gamez,
     poster: gameposter,
     coordinators: ["Kamalesh", "Mohammedsyfudee"]
