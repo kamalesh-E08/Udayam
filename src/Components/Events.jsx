@@ -7,7 +7,7 @@ import paperPresentation from '../assets/paper_presentaion.png';
 import gamez from '../assets/Gamez.png';
 import gameposter from '../assets/gameposter.png';
 import ppposter from '../assets/ppposter.png';
-import codeposter from '../assets/codeposter.png';
+import codeposter from '../assets/codeposter.jpg';
 import biznxtposter from '../assets/biznxtposter.png';
 
 const events = [
@@ -22,7 +22,7 @@ const events = [
   {
     title: "Code Hunter",
     description: "Solve coding challenges and hunt for bugs.",
-    fullDescription: "Code Hunter is a thrilling coding event where participants solve programming puzzles, debug code, and compete in algorithmic challenges. A must for coding enthusiasts!",
+    fullDescription: "A competitive coding event that tests participants' programming and problem-solving abilities. The competition consists of multiple rounds, including Logic League(Coding Quiz), Debug and Decode, and Blind Coding. Participants will solve  complex coding challenges by single person, making it a great opportunity for those passionate about coding and teamwork.",
     image: codeHunters,
     poster: codeposter,
     coordinators: ["Kamesh", "Rajadurai"]
@@ -30,7 +30,7 @@ const events = [
   {
     title: "BizNXT",
     description: "Present your innovative business ideas.",
-    fullDescription: "BizNXT challenges participants to present innovative business ideas. Teams will pitch their startups to judges, focusing on feasibility, creativity, and market impact.",
+    fullDescription: "This event is designed to challenge participants' knowledge of the business world. It includes tasks such as identifying business terms, company names, logos, and notable business personalities. Additionally, participants will be required to create and present an advertisement for a product. This event is ideal for those interested in marketing, branding, and business strategy, and it is a solo participation event.",
     image: bixnxt,
     poster: biznxtposter,
     coordinators: ["Aswathi", "Devanya"]
@@ -38,7 +38,7 @@ const events = [
   {
     title: "Gamez",
     description: "Participate in fun and engaging games.",
-    fullDescription: "GameZ is a fun-packed competition featuring eFootball(PES) and Stumble Guys. Compete against others in a fast-paced gaming experience!\n",
+    fullDescription: "GameZ is a fun-packed competition featuring eFootball and Stumble Guys. Compete against others in a fast-paced gaming experience!",
     image: gamez,
     poster: gameposter,
     coordinators: ["Kamalesh", "Mohammedsyfudee"]
