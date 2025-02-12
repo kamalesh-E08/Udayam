@@ -69,7 +69,7 @@ const Events = () => {
           {events.map((event, index) => (
             <Fade key={index} cascade damping={0.1}>
               <div className="card">
-                <img src={event.image} alt={event.title} className="event-image" />
+                  <img src={event.image} alt={event.title} className="event-image" />
                 <h3>{event.title}</h3>
                 <p>{event.description}</p>
                 <button className="read-more-btn" onClick={() => setSelectedEvent(event)}>Read More</button>
@@ -92,7 +92,7 @@ const Events = () => {
             <div className="modal-body">
               {/* Left Side - Image & Coordinators */}
               <div className="modal-left">
-                <img src={selectedEvent.poster} alt={selectedEvent.title} className="modal-image" />
+                  <img src={selectedEvent.poster} alt={selectedEvent.title} className="modal-image" />
                 <h4>Coordinators:</h4>
                 <ul className="coordinator-list">
                   {selectedEvent.coordinators.map((name, index) => (

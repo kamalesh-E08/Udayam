@@ -87,11 +87,13 @@ header {
 }
 
 .Heading {
-  font-family:'Playfair Display', serif;
-  color: #080108;
+  font-family: var(--heading-font);
+  color: #121212;
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 0 0 10px rgb(204, 0, 255), 0 0 20px #62ff00;
+  font-weight:bolder;
 }
 
 /* HAMBURGER MENU */
