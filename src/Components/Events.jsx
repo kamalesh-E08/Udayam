@@ -8,7 +8,7 @@ import gamez from '../assets/Gamez.png';
 import gameposter from '../assets/gameposter.png';
 import ppposter from '../assets/ppposter.png';
 import codeposter from '../assets/codeposter.jpg';
-import biznxtposter from '../assets/biznxtposter.png';
+import biznxtposter from '../assets/biznxtposter.jpg';
 
 const events = [
   {
