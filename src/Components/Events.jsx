@@ -33,7 +33,7 @@ const events = [
     fullDescription: "BizNXT challenges participants to present innovative business ideas. Teams will pitch their startups to judges, focusing on feasibility, creativity, and market impact.",
     image: bixnxt,
     poster: biznxtposter,
-    coordinators: ["Vardanam Harshitha", "Robert Black"]
+    coordinators: ["Aswathi", "Devanya"]
   },
   {
     title: "Gamez",
@@ -41,7 +41,7 @@ const events = [
     fullDescription: "GameZ is a fun-packed competition featuring eFootball and Stumble Guys. Compete against others in a fast-paced gaming experience!",
     image: gamez,
     poster: gameposter,
-    coordinators: ["Kamalesh", "David Blue"]
+    coordinators: ["Kamalesh", "Mohammedsyfudee"]
   }
 ];
 
