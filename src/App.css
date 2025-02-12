@@ -319,48 +319,6 @@ header {
   color: #F4E9F3;
 }
 
-/* Event Details */
-.event-details {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  max-width: 700px;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-}
-
-.event-details p {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 8px 0;
-}
-
-.event-details strong {
-  color: #FFD700;
-}
-
-/* List Styling */
-.about-list {
-  list-style: none;
-  padding: 0;
-}
-
-.about-list li {
-  font-size: 1.2rem;
-  margin: 10px 0;
-  padding-left: 25px;
-  position: relative;
-  color: #FFD700;
-}
-
-.about-list li::before {
-  content: "☞";
-  color: cyan;
-  font-size: 1.2rem;
-  position: absolute;
-  left: 0;
-  top: 2px;
-}
 
 /* Countdown Section */
 .countdown-section {
@@ -488,6 +446,168 @@ header {
 .register-btn:hover {
   background: aqua;
   transform: scale(1.05);
+}
+
+/* descrption */
+/* Blur Effect on Background When Modal is Open */
+.blur-website::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay effect */
+  backdrop-filter: blur(10px); /* Blurs everything */
+  z-index: 999;
+}
+
+/* Read More Button */
+.read-more-btn {
+  background: #ff1e8b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.read-more-btn:hover {
+  background: #c11512;
+  transform: scale(1.05);
+}
+
+/* Modal Styling */
+.event-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(30, 30, 30, 0.95);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button (Cross Mark) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #ff1e8b;
+}
+
+/* Fade In Animation (Fixes Left-to-Center Issue) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Modal Content Layout */
+.modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Left Side - Image & Coordinators */
+.modal-left {
+  flex: 1;
+  text-align: center;
+}
+
+.modal-image {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+/* Coordinators List */
+.coordinator-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.coordinator-list li {
+  font-size: 1rem;
+  color: #00FFFF;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #ff1e8b;
+}
+
+/* Right Side - Description */
+.modal-right {
+  flex: 2;
+}
+
+/* Highlighted Event Name */
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffff; /* Neon Cyan */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff1e8b, 0 0 30px #ff1e8b;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff1e8b, 0 0 30px #ff1e8b;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff1e8b, 0 0 25px #00ffff, 0 0 35px #00ffff;
+  }
+}
+
+/* Event Description */
+.modal-description {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-modal {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .modal-content {
+    flex-direction: column;
+  }
+
+  .modal-left,
+  .modal-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal-image {
+    max-width: 200px;
+  }
 }
 
 /*CONTACT DETAILS */
