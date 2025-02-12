@@ -11,7 +11,7 @@
   /* Full-screen image */
   .loading-image {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 90%;
     object-fit: contain; /* Ensures it covers the screen properly */
   }
   
