@@ -72,6 +72,10 @@ header {
   display: none;
 }
 
+.mobile h1{
+  text-align: center;
+}
+
 .mobile-logo {
   height: 50px;
   width: 80px;
