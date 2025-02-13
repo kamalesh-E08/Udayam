@@ -17,7 +17,7 @@ const events = [
     fullDescription: "Paper Presentation is an event where you can showcase your research, technical knowledge, and presentation skills in front of an expert panel. Participants will be judged on innovation, content, and delivery.",
     image: paperPresentation,
     poster: ppposter,
-    coordinators: ["Rubana", "Jane Smith"]
+    coordinators: ["Rubana. V", "Vikram. S"]
   },
   {
     title: "Code Hunter",
@@ -25,7 +25,7 @@ const events = [
     fullDescription: "A competitive coding event that tests participants' programming and problem-solving abilities. The competition consists of multiple rounds, including Logic League(Coding Quiz), Debug and Decode, and Blind Coding. Participants will solve  complex coding challenges by single person, making it a great opportunity for those passionate about coding and teamwork.",
     image: codeHunters,
     poster: codeposter,
-    coordinators: ["Kamesh", "Rajadurai"]
+    coordinators: ["Kamesh. P", "Rajadurai. R"]
   },
   {
     title: "BizNXT",
@@ -33,7 +33,7 @@ const events = [
     fullDescription: "This event is designed to challenge participants' knowledge of the business world. It includes tasks such as identifying business terms, company names, logos, and notable business personalities. Additionally, participants will be required to create and present an advertisement for a product. This event is ideal for those interested in marketing, branding, and business strategy, and it is a solo participation event.",
     image: bixnxt,
     poster: biznxtposter,
-    coordinators: ["Aswathi", "Devanya"]
+    coordinators: ["Aswathi. R", "Devanya. N"]
   },
   {
     title: "Gamez",
@@ -41,7 +41,7 @@ const events = [
     fullDescription: "GameZ is a fun-packed competition featuring eFootball and Stumble Guys. Compete against others in a fast-paced gaming experience!",
     image: gamez,
     poster: gameposter,
-    coordinators: ["Kamalesh", "Mohammedsyfudee"]
+    coordinators: ["Kamalesh. E", "Mohammedsyfudeen. S"]
   }
 ];
 
