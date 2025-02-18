@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import clgLogo from "../assets/kit_logo.png";
 import deptLogo from "../assets/dept_logo.jpg";
 import Udayam from "../assets/Udayam.png";
+import { BsJustify } from "react-icons/bs";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +37,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="logo"><img src={clgLogo} alt="College Logo" className="logo1" /></div>
         <div className="mobile"><img src={Udayam} alt="Udhayam Logo" className="mobile-logo" /></div>
+        <div className="mobile"><h1>UDHAYAM - 25</h1></div>
         <div className="title-container"><h1 className="Heading">UDHAYAM CULTURAL FEST</h1>
         <div className={`menu-overlay ${isOpen ? "open" : ""}`} onClick={closeMenu}></div>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
