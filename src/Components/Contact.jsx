@@ -34,7 +34,7 @@ const Contact = () => {
       <div className="social-links">
         <h3>Follow Us</h3><br></br>
         <div className="social-icons">
-          <a href="https://www.instagram.com/kitcbe_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+          <a href="https://www.instagram.com/kit_csbs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
             target="_blank" rel="noopener noreferrer" className="social-link instagram">
             <FaInstagram className="icon" /> Instagram
           </a>
