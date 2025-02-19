@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <LoadingPage />  // Show loading page for 3 seconds
+        <LoadingPage />
       ) : (
         <>
           <Header />

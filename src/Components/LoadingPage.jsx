@@ -1,5 +1,5 @@
 import React from "react";
-import "./loadingpage.css"; // Import CSS for styling
+import "./loadingpage.css";
 import culturalImage from "../assets/cultural.jpg"; // Import the image
 
 export default function LoadingPage() {
