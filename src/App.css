@@ -316,6 +316,18 @@ header {
 }
 
 /* Subtext */
+.about-subtext1 {
+  font-size:xx-large;
+  font-weight: bolder;
+  /* text-shadow: #25D366; */
+  text-shadow: 0 0 15px cyan, 0 0 30px #00FFFF;
+  animation: glowText1 5s infinite alternate;
+
+}
+@keyframes glowText1 {
+  from { text-shadow: 0 0 10px rgb(245, 6, 6), 0 0 20px #ff0000;color:#000000; }
+  to { text-shadow: 0 0 20px cyan, 0 0 40px #00FFFF; }
+}
 .about-subtext {
   font-size: 1.4rem;
   max-width: 800px;

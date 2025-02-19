@@ -28,6 +28,10 @@ const About = () => {
     <section id="about" className="about-section">
       <div className="about-container">
         <h2 className="about-heading">🎉 Welcome to Udhayam 2025! 🎊</h2>
+        <p className="about-subtext1">
+          Department Of Computer Science and Business Systems 
+        </p>
+        <br />
         <p className="about-subtext">
           A grand intercollege cultural fest, bringing together talent, 
           creativity, and excitement!  
