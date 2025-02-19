@@ -80,7 +80,12 @@ const Events = () => {
 
         <div className="register-container">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo58Yusrng6zob_qROEm6N0rgGgVMSQ7ZOCKWDjfAn1cWa_w/viewform" target="_blank" rel="noopener noreferrer" className="register-btn">
-            Register Now
+            Register (Engineering)
+          </a>
+        </div>
+        <div className="register-container">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtj0Bg4MGTouJw7YpP0I3SvgulCslERIg7tMnsoFl_YOvxEw/viewform" target="_blank" rel="noopener noreferrer" className="register-btn">
+            Register (Arts & science)
           </a>
         </div>
       </section>
