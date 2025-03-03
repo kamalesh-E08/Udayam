@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const About = () => {
   // Set the target date (March 1, 2025)
-  const eventDate = new Date("2025-03-01T00:00:00").getTime();
+  const eventDate = new Date("2026-03-01T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(eventDate - new Date().getTime());
 
   useEffect(() => {
